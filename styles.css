@@ -100,3 +100,32 @@ footer{ margin-top:20px; color:var(--muted); font-size:13px; display:flex; justi
   .grid-posts{ grid-template-columns:1fr; }
   main{ gap:12px; }
 }
+@media(max-width:600px){
+
+  .wrap{ padding:16px; margin:16px auto; }
+
+  header{ flex-direction:column; align-items:flex-start; gap:10px; }
+  .controls{ flex-wrap:wrap; justify-content:flex-start; }
+
+  h1{ font-size:18px; }
+  .subtitle{ font-size:12px; }
+
+  .btn{ font-size:12px; padding:6px 10px; }
+  .btn.primary{ padding:8px 12px; }
+
+  .panel{ padding:12px; }
+  .panel h3{ font-size:15px; }
+
+  .month-item{ padding:8px; font-size:13px; }
+
+  .grid-posts{ grid-template-columns:1fr; gap:12px; }
+  .card{ padding:12px; }
+  .card h4{ font-size:14px; }
+  .card .excerpt{ font-size:12px; line-height:1.4; }
+
+  .full-post{ padding:16px; }
+  .full-post h2{ font-size:18px; }
+  .full-post .body{ font-size:14px; }
+
+  footer{ flex-direction:column; gap:8px; text-align:center; }
+}
