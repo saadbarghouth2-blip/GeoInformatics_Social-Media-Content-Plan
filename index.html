@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GeoInformatics — 3-Month Content Plan (Example)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap" role="application">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">GI</div>
+        <div>
+          <h1>GeoInformatics — 3-Month Content Plan</h1>
+          <p class="subtitle">Example plan — October to December 2025 · 9 posts</p>
+        </div>
+      </div>
+
+      <div class="controls" role="toolbar" aria-label="Controls">
+        <button class="btn" id="downloadJson">Download JSON</button>
+        <button class="btn" id="expandAll">Show All</button>
+        <button class="btn primary" id="printBtn">Print / Save</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT: panel -->
+      <aside>
+        <div class="panel">
+          <h3>Plan overview</h3>
+          <p class="meta">This page contains example, detailed post text for each scheduled item. Use the months list to filter or click any card to view full content.</p>
+
+          <div style="height:12px;"></div>
+          <h3 style="font-size:14px;margin-bottom:6px;">Months</h3>
+          <div class="months" id="monthsList" role="navigation" aria-label="Months"></div>
+
+          <div style="height:12px;"></div>
+          <h3 style="font-size:14px;margin-bottom:6px;">Quick legend</h3>
+          <div class="legend">
+            <div class="tag">Example content</div>
+            <div class="tag">Detailed text</div>
+            <div class="tag">For management review</div>
+          </div>
+        </div>
+
+        <div style="height:12px;"></div>
+
+        <div class="panel">
+          <h3>Next steps</h3>
+          <ol class="meta" style="padding-left:18px; margin-top:8px;">
+            <li>Finalize copy and approve with manager</li>
+            <li>Design visual assets (if needed) to match copy</li>
+            <li>Schedule posts using chosen social tool</li>
+            <li>Monitor performance and iterate</li>
+          </ol>
+        </div>
+      </aside>
+
+      <!-- RIGHT: posts -->
+      <section>
+        <div class="panel panel-title">
+          <h3>Posts</h3>
+          <div class="small" id="countBadge">9 posts</div>
+        </div>
+
+        <!-- Grid summary -->
+        <div id="postsGrid" class="grid-posts" aria-live="polite"></div>
+
+        <!-- Expanded full posts -->
+        <div class="full-container" id="fullContainer" aria-live="polite"></div>
+
+        <footer>
+          <div>Prepared for: <strong>GeoInformatics</strong></div>
+          <div>Generated: Oct 2, 2025</div>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="backdrop"></div>
+    <div class="dialog" role="document" aria-labelledby="modalTitle">
+      <h3 id="modalTitle"></h3>
+      <div class="date" id="modalDate"></div>
+      <div class="text" id="modalText"></div>
+      <div style="margin-top:16px; display:flex; justify-content:flex-end; gap:8px;">
+        <button class="btn" id="copyBtn">Copy text</button>
+        <button class="btn" id="closeModal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
